@@ -1,0 +1,27 @@
+<!--pages/category/index.wxml-->
+<!-- 引入搜索组件 -->
+<Sosuo />
+<!-- 滑动栏开始 -->
+<view class="scroll">
+  <!-- 左边 -->
+  <scroll-view scroll-y class="scroll-left">
+    <view class="scroll-left-name {{current==index?'active':''}}" data-index="{{index}}" bindtap="tabClick" wx:for="{{categories}}" wx:key="index">{{item.cat_name}}</view>
+  </scroll-view>
+  <!-- 右边 -->
+  <scroll-view scroll-y class="scroll-right">
+    <view class="scroll-item" wx:for="{{categories[current].children}}" wx:key="index">
+    <!-- 标题 -->
+      <view class="scroll-item-title">/<text>{{item.cat_name}}</text>/</view>
+      <!-- 商品分类图片 -->
+      <view class="scroll-item-goods">
+        <navigator url="/pages/goods_list/index?query={{v.cat_name}}" wx:for="{{item.children}}" wx:for-item="v" wx:for-index="i" wx:key="i">
+          <image src="{{v.cat_icon}}"></image>
+          <text>{{v.cat_name}}</text>
+        </navigator>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+<!-- 滑动栏结束 -->
+
+

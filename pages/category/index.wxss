@@ -1,0 +1,62 @@
+/* pages/category/index.wxss */
+.scroll{
+  display: flex;
+  height: calc(100vh - 100rpx);
+}
+/* 左边部分 */
+.scroll .scroll-left{
+  height: 100%;
+  width: 182rpx;
+  color: #585858;
+  font-size: 28rpx;
+  background-color: #F3F3F3;
+}
+.scroll .scroll-left-name{
+  text-align: center;
+  margin-top: 37rpx;
+  line-height: 40rpx;
+}
+.scroll .scroll-left-name:nth-child(1){
+  margin-top: 27rpx;
+}
+.scroll .scroll-left .active{
+  color: var(--yougouColor);
+  border-left:4rpx solid #EA4350;
+}
+/* 右边部分 */
+.scroll .scroll-right{
+  text-align: center;
+}
+.scroll .scroll-right .scroll-item .scroll-item-title{
+  color: #575757;
+  font-size: 26rpx;
+  margin-top: 18rpx;
+  margin-bottom: 21rpx;
+}
+.scroll .scroll-right .scroll-item .scroll-item-title text{
+  margin: 0 7rpx;
+}
+.scroll .scroll-right .scroll-item .scroll-item-goods{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 48rpx;
+}
+.scroll .scroll-right .scroll-item .scroll-item-goods navigator{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 120rpx;
+  margin-right: 56rpx;
+  margin-bottom: 30rpx;
+}
+.scroll .scroll-right .scroll-item .scroll-item-goods navigator:nth-child(3n){
+  margin-right: 0;
+}
+.scroll .scroll-right .scroll-item .scroll-item-goods image{
+  width: 120rpx;
+  height: 120rpx;
+}
+.scroll .scroll-right .scroll-item .scroll-item-goods text{
+  color: #2E2E2E;
+  font-size: 21rpx;
+}
