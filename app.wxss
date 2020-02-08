@@ -1,0 +1,3 @@
+/**app.wxss**/
+/* 引入字体样式 */
+@import "/assets/styles/iconfont.wxss";
