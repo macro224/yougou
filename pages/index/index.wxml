@@ -1,3 +1,36 @@
-<!--pages/logs/index.wxml-->
-<text>pages/logs/index.wxml</text>
-<view class="iconfont icon-iconfontxiangxia1copy19"></view>
+<!--pages/index/index.wxml-->
+<!-- 引入搜索组件 -->
+<Sosuo />
+<!-- 轮播图开始 -->
+<swiper class="lunbo" indicator-dots="true" autoplay='true' indicator-color="#eee" indicator-active-color="#EA4350">
+  <swiper-item wx:for="{{lunboList}}" wx:key="index">
+    <navigator url="{{item.navigator_url}}" open-type="{{item.open_type}}">
+      <image src="{{item.image_src}}"></image>
+    </navigator>
+  </swiper-item>
+</swiper>
+<!-- 轮播图结果 -->
+<!-- 导航栏开始 -->
+<view class="nav">
+  <block wx:for="{{navList}}" wx:key="index">
+    <navigator url="/pages/category/index" open-type="switchTab">
+      <image src="{{item.image_src}}"></image>
+    </navigator>
+  </block>
+</view>
+<!-- 导航栏结束 -->
+<!-- 商品楼层开始 -->
+<view class="floorBox">
+  <view class="floor" wx:for="{{floorList}}" wx:key="index">
+  <!-- 标题 -->
+    <view class="floor-title">
+      <image src="{{item.floor_title.image_src}}"></image>
+    </view>
+    <view class="floor-imgs">
+      <navigator wx:for="{{item.product_list}}" wx:for-item="v" wx:key="i" wx:for-index="i" url="{{v.navigator_url}}" open-type="{{v.open_type}}">
+        <image src="{{v.image_src}}"></image>
+      </navigator>
+    </view>
+  </view>
+</view>
+<!-- 商品楼层结束 -->

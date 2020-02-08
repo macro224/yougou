@@ -1,3 +1,17 @@
 /**app.wxss**/
 /* 引入字体样式 */
 @import "/assets/styles/iconfont.wxss";
+/* 定义主题颜色 */
+page{
+  --yougouColor: #EA4350;
+}
+/* 初始化样式 */
+view,image,text,navigator{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+image{
+  width: 100%;
+  height: 100%;
+}
