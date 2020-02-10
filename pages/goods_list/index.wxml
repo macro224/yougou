@@ -5,7 +5,7 @@
 <Tabs tabs="{{tabs}}" bind:tabsChange="tabsChange" />
 <!-- Tab切换后的内容开始 -->
 <view wx:if="{{tabs[0].isActive}}">
-  <block wx:for="{{goodsList.goods}}" wx:key="index">
+  <block wx:for="{{goodsList}}" wx:key="index">
     <Goods goods="{{item}}" />
   </block>
 </view>

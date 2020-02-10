@@ -3,5 +3,8 @@
     "Sosuo": "../../components/Sosuo/Sosuo",
     "Tabs": "../../components/Tabs/Tabs",
     "Goods": "../../components/Goods/Goods"
-  }
+  },
+  "navigationBarTitleText": "商品列表",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark"
 }

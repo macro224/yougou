@@ -75,7 +75,14 @@
 					"id": 2,
 					"name": "商品列表 goods_list",
 					"pathName": "pages/goods_list/index",
-					"query": "query=曲面电视",
+					"query": "query=海信&cid=6",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "商品详情 goods_detail",
+					"pathName": "pages/goods_detail/index",
+					"query": "goods_id=43982",
 					"scene": null
 				}
 			]

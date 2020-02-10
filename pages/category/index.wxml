@@ -14,7 +14,7 @@
       <view class="scroll-item-title">/<text>{{item.cat_name}}</text>/</view>
       <!-- 商品分类图片 -->
       <view class="scroll-item-goods">
-        <navigator url="/pages/goods_list/index?query={{v.cat_name}}" wx:for="{{item.children}}" wx:for-item="v" wx:for-index="i" wx:key="i">
+        <navigator url="/pages/goods_list/index?query={{v.cat_name}}&cid={{v.cat_id}}" wx:for="{{item.children}}" wx:for-item="v" wx:for-index="i" wx:key="i">
           <image src="{{v.cat_icon}}"></image>
           <text>{{v.cat_name}}</text>
         </navigator>
