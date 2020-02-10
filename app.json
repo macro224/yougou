@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/search/index",
-    "pages/category/index"
+    "pages/category/index",
+    "pages/goods_list/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -19,7 +20,7 @@
       "selectedIconPath": "assets/icons/home-o.png"
     },{
       "text": "分类",
-      "pagePath": "pages/index/index",
+      "pagePath": "pages/category/index",
       "iconPath": "assets/icons/category.png",
       "selectedIconPath": "assets/icons/category-o.png"
     },{

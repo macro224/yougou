@@ -1,0 +1,6 @@
+<!--components/Tabs/Tabs.wxml-->
+<view class="tabs">
+  <view class="tabs-item {{item.isActive?'active':''}}" bindtap="bandTabs" data-id="{{item.id}}" wx:for="{{tabs}}" wx:key="index">
+    {{item.value}}
+  </view>
+</view>

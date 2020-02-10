@@ -1,4 +1,7 @@
 /* components/Goods/Goods.wxss */
+.goods{
+  padding: 9rpx 0;
+}
 .goods .goods-btn{
   display: flex;
   padding-left: 42rpx;

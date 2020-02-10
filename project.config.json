@@ -68,6 +68,14 @@
 					"id": -1,
 					"name": "商品分类 category",
 					"pathName": "pages/category/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "商品列表 goods_list",
+					"pathName": "pages/goods_list/index",
+					"query": "query=曲面电视",
 					"scene": null
 				}
 			]

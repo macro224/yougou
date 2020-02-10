@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "Sosuo": "../../components/Sosuo/Sosuo",
+    "Tabs": "../../components/Tabs/Tabs",
+    "Goods": "../../components/Goods/Goods"
+  }
+}

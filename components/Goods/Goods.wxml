@@ -1,6 +1,6 @@
 <!--components/Goods/Goods.wxml-->
 <view class="goods">
-  <navigator class="goods-btn">
+  <navigator class="goods-btn" url="/pages/goods_detail/index?goods_id={{goods.goods_id}}">
     <view class="goods-img">
       <image src="{{goods.goods_big_logo}}" wx:if="{{goods.goods_big_logo}}"></image>
       <image src="https://ww1.sinaimg.cn/large/007rAy9hgy1g24by9t530j30i20i2glm.jpg" wx:else></image>
