@@ -1,0 +1,29 @@
+/* components/Goods/Goods.wxss */
+.goods .goods-btn{
+  display: flex;
+  padding-left: 42rpx;
+  padding-right: 26rpx;
+}
+.goods .goods-img{
+  width: 190rpx;
+  height: 190rpx;
+  margin-right: 30rpx;
+}
+.goods .goods-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  color: #434343;
+  padding: 18rpx 0;
+  font-size: 24rpx;
+}
+.goods .goods-info .goods-info-up{
+  line-height: 36rpx;
+}
+.goods .goods-info .goods-info-down{
+  color: var(--yougouColor);
+}
+.goods .goods-info .goods-info-down text{
+  font-size: 18rpx;
+}

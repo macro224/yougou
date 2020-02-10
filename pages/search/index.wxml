@@ -1,2 +1,17 @@
 <!--pages/search/index.wxml-->
-<text>pages/search/index.wxml</text>
+<!-- 搜索输入部分 -->
+<view class="sosuo">
+  <view class="sosuo-left">
+    <icon type="search"></icon>
+    <input placeholder="输入商品名" bindinput="bandInput" value="{{sosuoVal}}"></input>
+  </view>
+  <view class="sosuo-right" bindtap="getGoods">
+    搜索
+  </view>
+</view>
+<!-- 搜索结果部分 -->
+<view class="goods">
+  <block wx:for="{{goodList}}" wx:key="index">
+    <Goods goods="{{item}}" />
+  </block>
+</view>

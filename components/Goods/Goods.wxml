@@ -1,0 +1,13 @@
+<!--components/Goods/Goods.wxml-->
+<view class="goods">
+  <navigator class="goods-btn">
+    <view class="goods-img">
+      <image src="{{goods.goods_big_logo}}" wx:if="{{goods.goods_big_logo}}"></image>
+      <image src="https://ww1.sinaimg.cn/large/007rAy9hgy1g24by9t530j30i20i2glm.jpg" wx:else></image>
+    </view>
+    <view class="goods-info">
+      <view class="goods-info-up">{{goods.goods_name}}</view>
+      <view class="goods-info-down" wx:if="{{goods.goods_price}}"><text>￥</text>{{goods.goods_price}}</view>
+    </view>
+  </navigator>
+</view>

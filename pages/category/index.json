@@ -1,5 +1,6 @@
 {
   "usingComponents": {
     "Sosuo": "../../components/Sosuo/Sosuo"
-  }
+  },
+  "navigationBarTitleText": "商品分类"
 }
