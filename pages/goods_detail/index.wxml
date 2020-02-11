@@ -1,7 +1,45 @@
 <!--pages/goods_detail/index.wxml-->
-111
 <!-- 轮播图开始 -->
-<!-- <swiper class="lunbo" indicator-dots="true" autoplay='true' indicator-color="#eee" indicator-active-color="#EA4350">
-
-</swiper> -->
+<swiper class="lunbo" indicator-dots="true" autoplay='true' indicator-color="#eee" indicator-active-color="#EA4350">
+  <swiper-item wx:if="{{good.pics.length!=0}}" wx:for="{{good.pics}}" wx:key="index" bindtap="handMaximg" data-url="{{item.pics_mid}}">
+    <image src="{{item.pics_mid}}" mode="widthFix"></image>
+  </swiper-item>
+  <swiper-item wx:if="{{good.pics.length===0}}">
+    <text>暂无图片</text>
+  </swiper-item>
+</swiper>
 <!-- 轮播图结束 -->
+<!-- 商品信息开始 -->
+<view class="good-info">
+  <view class="good-info-up">
+    <view class="goods-up-left"><text>￥</text>{{good.goods_price}}</view>
+    <view class="goods-up-right">
+      <view class="iconfont icon-Artboard btn">
+        <button open-type="share"></button>
+      </view>
+      <view class="iconfont {{isCollect?'icon-shoucanggaoliang active':'icon-collect'}}" bindtap="handShoucang"></view>
+    </view>
+  </view>
+  <view class="good-info-down">
+    {{good.goods_name}}
+  </view>
+</view>
+<!-- 图文详情 -->
+<view class="tuwen">
+  <text class="tuwen-title">图文详情</text>
+  <rich-text nodes="{{good.goods_introduce}}"></rich-text>
+</view>
+<!-- 商品信息结束 -->
+<view class="tabbar">
+  <view class="anniu">
+    <view class="iconfont icon-kefu2"></view>
+    <text>联系客服</text>
+    <button open-type="contact"></button>
+  </view>
+  <navigator url="/pages/cart/index" open-type="switchTab" class="anniu">
+    <view class="iconfont icon-chat-blue"></view>
+    <text>购物车</text>
+  </navigator>
+  <view class="joincart tong" bindtap="handCartadd">加入购物车</view>
+  <navigator url="/pages/pay/index" class="goumai tong">立即购买</navigator>
+</view>

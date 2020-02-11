@@ -4,7 +4,9 @@
     "pages/search/index",
     "pages/category/index",
     "pages/goods_list/index",
-    "pages/goods_detail/index"
+    "pages/goods_detail/index",
+    "pages/cart/index",
+    "pages/pay/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -26,7 +28,7 @@
       "selectedIconPath": "assets/icons/category-o.png"
     },{
       "text": "购物车",
-      "pagePath": "pages/index/index",
+      "pagePath": "pages/cart/index",
       "iconPath": "assets/icons/cart.png",
       "selectedIconPath": "assets/icons/cart-o.png"
     },{

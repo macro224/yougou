@@ -1,1 +1,126 @@
 /* pages/goods_detail/index.wxss */
+page{
+  padding-bottom: 94rpx;
+}
+/* 轮播图 */
+.lunbo{
+  height: 497rpx;
+  text-align: center;
+}
+.lunbo swiper-item image{
+  width: 497rpx;
+}
+.lunbo swiper-item text{
+  line-height: 497rpx;
+  color: var(--yougouColor);
+}
+/* 商品信息 */
+.good-info{
+  padding: 19rpx 36rpx 48rpx 33rpx;
+}
+.good-info .good-info-up{
+  display: flex;
+  justify-content: space-between;
+}
+.good-info .goods-up-left{
+  font-size: 36rpx;
+  color: var(--yougouColor);
+}
+.good-info .goods-up-left text{
+  font-size: 28rpx;
+}
+.good-info .goods-up-right{
+  display: flex;
+}
+.good-info .goods-up-right view{
+  font-size: 38.5rpx;
+}
+.good-info .goods-up-right .active{
+  color: var(--yougouColor)
+}
+.good-info .goods-up-right .btn{
+  margin-right: 45rpx;
+  position: relative;
+}
+.good-info .goods-up-right .btn button{
+  opacity: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.good-info .good-info-down{
+  height: 84rpx;
+  color: #434343;
+  font-size: 30rpx;
+  margin-top: 19rpx;
+  line-height: 42rpx;
+  /* 文字溢出显示 ... */
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.tuwen{
+  text-align: center;
+}
+.tuwen-title{
+  color: #434343;
+  font-size: 28rpx;
+  margin-top: 38rpx;
+  line-height: 40rpx;
+}
+/* 底部栏开始 */
+.tabbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 94rpx;
+  font-size: 26rpx;
+  padding: 0 30rpx;
+  background-color: #fff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+.tabbar .anniu{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #434343;
+  position: relative;
+}
+.tabbar .anniu text{
+  font-size: 21rpx;
+}
+.tabbar .anniu button{
+  opacity: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.tabbar .tong{
+  width: 196rpx;
+  height: 60rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 60rpx;
+  border-radius: 30rpx;
+
+}
+.tabbar .joincart{
+  margin-right: 22rpx;
+  background-color: #FCAA23;
+}
+.tabbar .goumai{
+  background-color: var(--yougouColor);
+}
+
+/* 底部栏结束 */
